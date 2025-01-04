@@ -1,5 +1,6 @@
 [versions]
 agp = "8.7.3"
+annotation = "1.9.1"
 kotlin = "2.0.0"
 kotlin-serialization = "2.1.0"
 kotlin-serialization-json = "1.8.0-RC"
@@ -12,12 +13,15 @@ activityCompose = "1.9.3"
 composeBom = "2024.12.01"
 retrofit = "2.11.0"
 kotlinx-coroutines = "1.10.1"
+retrofit2KotlinxSerializationConverter = "1.0.0"
+retrofitAdaptersResult = "1.0.13"
 
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
@@ -39,6 +43,8 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines"}
 
 kotlinx-serealization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization-json"}
+retrofit-adapters-result = { module = "com.github.skydoves:retrofit-adapters-result", version.ref = "retrofitAdaptersResult" }
+retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
