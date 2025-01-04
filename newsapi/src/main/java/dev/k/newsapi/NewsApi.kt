@@ -22,7 +22,7 @@ import java.util.Date
  */
 interface NewsApi {
     /**
-     * API [source](https://newsapi.org/docs/endpoints/everything)
+     * [API source](https://newsapi.org/docs/endpoints/everything)
      */
     @GET("/everything")
     suspend fun everything(
