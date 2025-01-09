@@ -5,6 +5,7 @@
       <module name="NewsApp.app" target="21" />
       <module name="NewsApp.database" target="21" />
       <module name="NewsApp.features.news-main" target="21" />
+      <module name="NewsApp.news-data" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
