@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NewsAppTheme {
-                // TODO(1:13:35 - Подключает KSP)
+
             }
         }
     }

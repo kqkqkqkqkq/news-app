@@ -38,5 +38,11 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
 
     implementation(project(":database"))
-    implementation(project(":newsapi"))
+    implementation(project(":news-api"))
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.ui.test.junit4)
 }
